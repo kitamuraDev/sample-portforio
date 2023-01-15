@@ -1,0 +1,62 @@
+<header>
+  <h1 class="title">
+    <a href="#">Kitamura<span>Dev</span></a>
+  </h1>
+  <nav>
+    <ul>
+      <li><a href="#">ホーム</a></li>
+      <li><a href="#">ブログ</a></li>
+      <li><a href="#">ポートフォリオ</a></li>
+    </ul>
+  </nav>
+  <div class="btn">
+    <a href="#">お問い合わせ</a>
+  </div>
+</header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .title a {
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+  }
+  span {
+    color: lightseagreen;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+  nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  nav ul li a:hover {
+    color: lightseagreen;
+  }
+
+  .btn {
+    background-color: lightseagreen;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .btn:hover {
+    border-radius: 80px;
+    transform: scale(1.1);
+  }
+  .btn a {
+    color: white;
+    font-weight: bold;
+  }
+</style>
