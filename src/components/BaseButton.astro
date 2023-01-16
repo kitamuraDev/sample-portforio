@@ -1,0 +1,27 @@
+---
+interface Props {
+  text: string;
+  type: 'button' | 'reset' | 'submit';
+}
+
+const { text, type } = Astro.props;
+---
+
+<button type={type}>{text}</button>
+
+<style>
+  button {
+    border: none;
+    border-radius: 80px;
+    padding: 10px 30px;
+    color: white;
+    background-color: lightseagreen;
+    border: 2px solid lightseagreen;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  button:hover {
+    background-color: transparent;
+  }
+</style>

@@ -1,0 +1,61 @@
+---
+import BaseButton from './BaseButton.astro';
+---
+
+<section class="about">
+  <div class="main">
+    <img src="./person.png" />
+    <div class="about-text">
+      <h2>About Me</h2>
+      <h4>Web Developer & FullStack Engineer</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat expedita distinctio similique non qui cumque
+        debitis sit error, id cum molestias voluptas modi nam magni delectus nulla asperiores numquam saepe at sequi in
+        neque architecto facilis quam! Omnis quos, consequatur quas ipsa doloribus officia hic. Mollitia, ipsam neque.
+        Reiciendis, atque.
+      </p>
+      <BaseButton text="お問い合わせ" type="button" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #191919;
+  }
+
+  .main {
+    width: 1130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .main img {
+    width: 430px;
+  }
+
+  .about-text {
+    width: 550px;
+  }
+  .about-text h2 {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .about-text h4 {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+  }
+  .about-text p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8em;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+  }
+</style>
