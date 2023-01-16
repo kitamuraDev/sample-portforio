@@ -1,0 +1,84 @@
+---
+import BaseButton from './BaseButton.astro';
+---
+
+<section class="portforio">
+  <div class="title">
+    <h2>ポートフォリオ</h2>
+  </div>
+  <div class="box">
+    {
+      Array.from({ length: 3 }, () => (
+        <div class="card">
+          <i class="fa-solid fa-code" />
+          <h4>Web Developer</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime magni corporis odio? Aut aliquam et nemo
+            quos illum. Perferendis harum odit, maiores cumque laboriosam atque tenetur delectus sint eius omnis.
+            Repellendus similique laboriosam culpa tenetur enim tempore ipsa rem corporis.
+          </p>
+          <a href="#">
+            <BaseButton text="もっと読む" type="button" />
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .portforio {
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0;
+  }
+
+  .title h2 {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 1130px;
+    margin: 0 auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 32px;
+    border-radius: 20px;
+    background-color: #191919;
+  }
+
+  .card i {
+    color: lightseagreen;
+    font-size: 3rem;
+    margin-bottom: 8px;
+  }
+
+  .card h4,
+  .card p {
+    color: white;
+  }
+  .card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .card p {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.8em;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+  }
+</style>
