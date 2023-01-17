@@ -1,0 +1,27 @@
+---
+import BaseButton from './BaseButton.astro';
+---
+
+<section class="contact">
+  <p>気になる方は私にお問い合わせください</p>
+  <BaseButton text="お問い合わせ" type="button" />
+</section>
+
+<style>
+  .contact {
+    height: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: #191919;
+  }
+
+  .contact p {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+  }
+</style>
